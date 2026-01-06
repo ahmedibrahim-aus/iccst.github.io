@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting...</title>
+  <!-- This line is the magic -->
+  <script type="text/javascript">
+    // Single-page app redirect
+    var path = window.location.pathname;
+    // Optional: adjust this if your project is not a root-level repo
+    var root = '/your-repository-name/'; 
+    window.location.replace(root + '?p=' + path);
+  </script>
+</head>
+<body>
+  <p>If you are not redirected automatically, follow this <a href="/">link to the main page</a>.</p>
+</body>
+</html>
